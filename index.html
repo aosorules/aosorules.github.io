@@ -1,9 +1,31 @@
-<html>
-<head>
-	<title></title>
-</head>
+<HTML>
+<HEAD>
+    <TITLE>
+    Save the Trees
+    </TITLE>
+</HEAD>
+Save the trees!
+
 <body>
-	<h1>Welcome to alex's website!!!</h1>
+
+<p> These are a bunch of random tree facts to encourage you to save them!!</p>
+
+<p id="fpp" onclick="getValue()">Click me</p>
+
+<p>Go to this website to donate: http://www.plantabillion.org/</p>
+
+<p>For more tree facts go here: www.ncsu.edu/project/treesofstrength/treefact.htm</p>
+<script>
+var facts = ["There are over 23,000 different kinds of trees in the world.", "A healthy tree can increase your property value by as much as 27 percent while trees with dead branches, hollow cavities and other problems can decrease your property value", "A tree can absorb as much as 48 pounds of carbon dioxide per year and can sequester 1 ton of carbon dioxide by the time it reaches 40 years old.", "Tree wood is a highly organized arrangement of living, dying, and dead cells.", "One large tree can lift up to 100 gallons of water out of the ground and discharge it into the air in a day.", "Almost 98% (by weight) of a tree is made up of six elements: carbon, hydrogen, oxygen, nitrogen, phosphorus and sulfur."];//6 of them
+function getValue()
+{
+var randomNumberFromArray = facts[Math.round(Math.random()*5)];
+var ptag = document.getElementById("fpp");
+ptag.innerHTML = randomNumberFromArray;
+}
+</script>
 
 </body>
-</html>
+
+
+</HTML>
